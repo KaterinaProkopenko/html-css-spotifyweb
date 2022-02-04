@@ -1,0 +1,57 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Circular Std', sans-serif;                         
+}
+
+/* Breakpoint Large */
+
+main {
+    display: flex;
+}
+
+main .menu {
+    width: 220px;
+    height: 665px;
+    background-color: red;
+    position: fixed;
+    left: 0;
+}
+
+main .main-container {
+    width: 100%;
+    height: 665px;
+    background-color: green;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+}
+
+/* Breakpoint Medium */
+
+@media screen and (min-width: 768px) {
+}
+
+/* Breakpoint Small */
+
+@media screen and (min-width: 577px) {
+}
+
+/* Breakpoint X-small */
+
+@media screen and (max-width: 576px) {
+    main .menu {
+        width: 50px;
+    }
+}
+
+
+
