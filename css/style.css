@@ -23,15 +23,60 @@ main .menu {
     left: 0;
 }
 
+.menu .logo {
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.menu .home {
+    width: 100%;
+    height: 110px;
+    background-color: aquamarine;
+}
+
+.menu .playlist {
+    width: 100%;
+    height: 480px;
+}
+
+.menu .user {
+    width: 100%;
+    height: 45px;
+    background-color: aqua;
+}
+
+
 main .main-container {
     width: 100%;
-    height: 665px;
+    height: 685px;
     background-color: green;
+    overflow: auto;
+    margin-left: 220px;
+}
+
+.main-container .upgrade {
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+.main-container .type-movie {
+    width: 100%;
+    height: 50px;
+    background-color: chocolate;
+}
+
+.main-container .row {
+    width: 100%;
+    height: 30%;
+    background-color: #ff00cb;
+    border-bottom: 3px solid black;
 }
 
 footer {
     width: 100%;
-    height: 70px;
+    height: 54px;
     background-color: blue;
 }
 
@@ -50,6 +95,14 @@ footer {
 @media screen and (max-width: 576px) {
     main .menu {
         width: 50px;
+    }
+
+    main .main-container {
+        width: 100%;
+        height: 685px;
+        background-color: green;
+        overflow: auto;
+        margin-left: 50px;
     }
 }
 
