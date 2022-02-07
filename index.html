@@ -15,50 +15,50 @@
 
     <main>
         <section class="menu">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="img/logo.svg" alt="Logo">
-                <img src="img/logo-small.svg" alt="Small-logo">
-            </div>
+            <div class="menu-top">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo">
+                    <img src="img/logo-small.svg" alt="Small-logo">
+                </div>
 
-            <!-- Navigazione principale -->
-            <nav class="home">
+                <!-- Navigazione principale -->
+                <nav class="home">
                 <ul>
                     <li>
                         <a href="#">
                             <img src="img/home.svg" alt="Home">
-                            Home
+                            <div class="home-effect">Home</div>
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
                             <img src="img/search.svg" alt="Search">
-                            Cerca
+                            <div class="home-effect">Cerca</div>
                         </a>
                     </li>
                     
                     <li>
                         <a href="#">
                             <img src="img/libreria.svg" alt="Library">
-                            La tua libreria
+                            <div class="home-effect">La tua libreria</div>
                         </a>
                     </li>
                 </ul>
-            </nav>
+                </nav>
 
-            <!-- Navigazione di playlist -->
-            <nav class="playlist">
-                <div class="playlist-top">
+                <!-- Navigazione di playlist -->
+                <nav class="playlist">
                     <h4>PLAYLIST</h4>
+                    <div class="create-playlist">
+                        <a href="#">
+                            <span><i class="fas fa-plus-square"></i></span> 
+                            Crea Playlist
+                        </a>
+                    </div>
+                            
                     <ul>
-                        <li>
-                            <a class="create-playlist" href="#">
-                                <i class="fas fa-plus-square"></i>
-                                Crea Playlist
-                            </a>
-                        </li>
-
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
@@ -66,21 +66,27 @@
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
-
                     </ul>
-                </div>
+                </nav>
+            </div>
+            
 
-                <div class="playlist-bottom"></div>
-            </nav>
-
-            <!-- Utente -->
-            <div class="user"></div>
+            <div class="menu-bottom">
+                <!-- Utente -->
+                <div class="user"></div>
+            </div>
+           
         </section>
 
         <section class="main-container">
 
             <!-- Aggiornamento -->
-            <div class="upgrade"></div>
+            <div class="upgrade">
+
+                <button>
+                    <a href="#">EFFETTUA L'APGRADE</a>
+                </button>
+            </div>
 
             <!-- Navigazione di film-->
             <nav class="type-movie"></nav>
