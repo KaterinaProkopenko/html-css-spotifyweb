@@ -21,7 +21,7 @@ ul li {
 
 main .menu {
     width: 220px;
-    height: 92.7%;
+    height: 92%;
     /* height: 686px; */
     background-color: red;
     padding: 0 7px;
@@ -215,11 +215,13 @@ main .main-container {
 
 footer {
     width: 100%;
-    height: 54px;
+    height: 60px;
     background-color: blue;
     position: fixed;
     bottom: 0;
     display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
 }
 
 footer .cont-footer {
@@ -231,6 +233,7 @@ footer .cont-footer {
 .cont-footer .footer-img {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
 }
 
 .cont-footer .footer-img img {
@@ -240,6 +243,7 @@ footer .cont-footer {
 
 .cont-footer .name-recommendation {
     padding-left: 10px;
+    flex-shrink: 0;
 }
 
 .cont-footer .name-recommendation h5 {
@@ -267,6 +271,10 @@ footer .cont-footer {
 }
 
 .footer-center .play {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding-top: 6px;
 }
 
 .footer-center .play a {
@@ -288,6 +296,8 @@ footer .cont-footer {
 
 .footer-center .time {
     display: flex;
+    align-items: center;
+    height: 50%;
 }
 
 .footer-center .time .real-time,
@@ -297,15 +307,44 @@ footer .cont-footer {
     padding: 0 20px;
 }
 
+footer .footer-right>div {
+    color: white;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
 .footer-center .time #lightgray {
     width: 70px;
-    border-bottom: 4px solid lightgray;
+    height: 4px;
+    background-color: lightgray;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .footer-center .time #gray {
     width: 280px;
-    border-bottom: 4px solid gray;
+    height: 4px;
+    background-color: gray;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
+.cont-footer #volume-lightgray {
+    width: 35px;
+    height: 4px;
+    background-color: lightgray;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cont-footer #volume-gray {
+    width: 110px;
+    height: 4px;
+    background-color: gray;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 
 
 /* Breakpoint Medium */
@@ -372,19 +411,18 @@ footer .cont-footer {
         display: none;
     }
 
-    
-    
-
-
-
-
-
+    /* main */
     main .main-container {
         width: 100%;
         height: 685px;
         background-color: green;
         overflow: auto;
         margin-left: 50px;
+    }
+
+    /* footer */
+    .cont-footer .name-recommendation {
+        flex-shrink: 1;
     }
 }
 
