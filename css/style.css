@@ -208,9 +208,48 @@ main .main-container {
 
 .main-container .row {
     width: 100%;
-    height: 30%;
+   /*  height: 390px; */
     background-color: #ff00cb;
     border-bottom: 3px solid black;
+    padding: 10px;
+}
+
+.row h2 {
+    color: white;
+}
+
+.row p {
+    padding-top: 5px;
+    font-size: 13px;
+    color: gray;
+}
+
+.row .row-cards {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.row-cards .movie-card {
+    flex-basis: calc(100% / 6);
+    background-color: darkolivegreen;
+    text-align: center;
+}
+
+.row-cards .movie-card img {
+    width: 100%;
+}
+
+.row-cards .movie-card h5 {
+    color: white;
+    padding: 4px 0;
+}
+
+.row-cards .movie-card p {
+    color: gray;
+    font-size: 11px;
 }
 
 footer {
@@ -230,33 +269,41 @@ footer .cont-footer {
     align-items: center;
 }
 
-.cont-footer .footer-img {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
+footer .footer-left {
+    background-color: #4ee249;
+    width: 215px;
 }
 
-.cont-footer .footer-img img {
+.footer-left .footer-img {
+    width: 40px;
+    height: 40px;
+/*     flex-shrink: 0; */
+}
+
+.footer-left .footer-img img {
     width: 100%;
     height: 100%;
 }
 
-.cont-footer .name-recommendation {
+.footer-left .name-recommendation {
     padding-left: 10px;
-    flex-shrink: 0;
+/*     flex-shrink: 0; */
 }
 
-.cont-footer .name-recommendation h5 {
+.footer-left .name-recommendation h5 {
     color: white;
 }
 
-.cont-footer .name-recommendation p {
+.footer-left .name-recommendation p {
     font-size: 11px;
     color: gray;
 }
 
-.cont-footer .add {
-    padding-left: 50px;
+.footer-left .add {
+    width: 50%;
+    height: 100%;
+    line-height: 54px;
+    text-align: right;
 }
 
 .add a .fa-heart,
@@ -307,6 +354,9 @@ footer .cont-footer {
     padding: 0 20px;
 }
 
+footer .footer-right {
+}
+
 footer .footer-right>div {
     color: white;
     font-size: 15px;
@@ -350,11 +400,14 @@ footer .footer-right>div {
 /* Breakpoint Medium */
 
 @media screen and (min-width: 768px) {
+    
 }
+
 
 /* Breakpoint Small */
 
 @media screen and (min-width: 577px) {
+
 }
 
 /* Breakpoint X-small */
@@ -421,10 +474,7 @@ footer .footer-right>div {
     }
 
     /* footer */
-    .cont-footer .name-recommendation {
+    /* .cont-footer .name-recommendation {
         flex-shrink: 1;
     }
-}
-
-
-
+} */
