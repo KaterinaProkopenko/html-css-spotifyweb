@@ -12,6 +12,8 @@ body {
    /* Breakpoint Large */
 
 main {
+    width: 100vw;
+    max-width: 100%;
     display: flex;
 }
 
@@ -157,7 +159,7 @@ li a .home-effect {
 }
 
 main .main-container {
-    width: 100%;
+    width: 86%;
     height: 685px;
     background-color: green;
     overflow: auto;
@@ -165,22 +167,26 @@ main .main-container {
 }
 
 .main-container .upgrade {
-    width: 100%;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 220px;
+    padding-right: 20px;
 }
 
-.upgrade .upgrade-button button {
+.upgrade button {
     padding: 5px 30px 8px 30px;
     border-radius: 15px;
     border: 1px solid white;
     background-color: black;
 }
 
-.upgrade-button button a {
+.upgrade button a {
     text-decoration: none;
     color: white;
     font-size: 10px;
@@ -188,12 +194,13 @@ main .main-container {
 
 .main-container .type-movie {
     width: 100%;
-    height: 40px;
+    height: 65px;
     background-color: chocolate;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .type-movie .type {
@@ -238,16 +245,20 @@ main .main-container {
     text-align: center;
 }
 
-.row-cards .movie-card img {
+.row-cards .movie-card a {
+    text-decoration: none;
+}
+
+.row-cards .movie-card a img {
     width: 100%;
 }
 
-.row-cards .movie-card h5 {
+.row-cards .movie-card a h5 {
     color: white;
     padding: 4px 0;
 }
 
-.row-cards .movie-card p {
+.row-cards .movie-card a p {
     color: gray;
     font-size: 11px;
 }
@@ -400,6 +411,9 @@ footer .footer-right>div {
 /* Breakpoint Medium */
 
 @media screen and (min-width: 768px) {
+    .row .row-cards {
+        flex-wrap: nowrap;
+    }
     
 }
 
@@ -471,6 +485,14 @@ footer .footer-right>div {
         background-color: green;
         overflow: auto;
         margin-left: 50px;
+    }
+
+    .main-container .upgrade {
+        left: 55px;
+    }
+
+    .main-container .type-movie {
+        line-height: 35px;
     }
 
     /* footer */
