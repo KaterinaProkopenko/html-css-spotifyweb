@@ -12,8 +12,7 @@ body {
    /* Breakpoint Large */
 
 main {
-    width: 100vw;
-    max-width: 100%;
+    height: calc(100%-60px);
     display: flex;
 }
 
@@ -22,13 +21,10 @@ ul li {
 }
 
 main .menu {
-    width: 220px;
-    height: 92%;
-    /* height: 686px; */
+    width: 20%;
+    height: 100%;
     background-color: red;
     padding: 0 7px;
-    position: fixed;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -159,11 +155,9 @@ li a .home-effect {
 }
 
 main .main-container {
-    width: 86%;
-    height: 685px;
+    width: 80%;
     background-color: green;
     overflow: auto;
-    margin-left: 220px;
 }
 
 .main-container .upgrade {
@@ -215,7 +209,6 @@ main .main-container {
 
 .main-container .row {
     width: 100%;
-   /*  height: 390px; */
     background-color: #ff00cb;
     border-bottom: 3px solid black;
     padding: 10px;
@@ -267,8 +260,6 @@ footer {
     width: 100%;
     height: 60px;
     background-color: blue;
-    position: fixed;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
@@ -481,10 +472,7 @@ footer .footer-right>div {
     /* main */
     main .main-container {
         width: 100%;
-        height: 685px;
         background-color: green;
-        overflow: auto;
-        margin-left: 50px;
     }
 
     .main-container .upgrade {
