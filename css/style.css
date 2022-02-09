@@ -12,7 +12,7 @@ body {
    /* Breakpoint Large */
 
 main {
-    height: calc(100%-60px);
+    height: calc(100% - 60px);
     display: flex;
 }
 
@@ -156,6 +156,7 @@ li a .home-effect {
 
 main .main-container {
     width: 80%;
+    height: 100%;
     background-color: green;
     overflow: auto;
 }
