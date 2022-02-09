@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Circular Std', sans-serif;                         
+    font-family: 'Circular Std', sans-serif;
+    min-width: 480px;                         
 }
 
    /* Breakpoint Large */
@@ -23,7 +24,7 @@ ul li {
 main .menu {
     width: 220px;
     height: 100%;
-    background-color: red;
+    background-color: black;
     padding: 0 7px;
     display: flex;
     flex-direction: column;
@@ -33,7 +34,6 @@ main .menu {
 .menu .menu-top .logo {
     width: 100%;
     height: 50px;
-    background-color: antiquewhite;
 }
 
 .logo img:first-child {
@@ -42,7 +42,7 @@ main .menu {
     display: inline;
     position: relative;
     left: -16px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .logo img:last-child {
@@ -52,7 +52,7 @@ main .menu {
 .menu .menu-top .home {
     width: 100%;
     height: 110px;
-    background-color: aquamarine;
+    margin-top: 15px;
 }
 
 .home ul li {
@@ -77,10 +77,10 @@ li a .home-effect {
 .menu .menu-top .playlist {
     width: 100%;
     padding-top: 15px;
-    background-color: darkorange;
 }
 
 .playlist h4 {
+    color: white;
     padding: 10px 0;
 }
 
@@ -97,20 +97,15 @@ li a .home-effect {
 
 .playlist .list {
     width: 100%; 
-    background-color: #4ee249;
 }
 
 .playlist .list ul li {
     line-height: 27px;
 }
 
-.menu .menu-bottom {
-    background-color: rgb(69, 212, 212);
-}
-
 .menu-bottom .user {
     line-height: 30px;
-    padding-top: 13px;
+    padding: 13px 0;
 }
 
 .menu-bottom .user .profile-photo{
@@ -138,7 +133,7 @@ li a .home-effect {
 }
 
 .menu-bottom .install {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
     padding-bottom: 7px;
 }
 
@@ -157,8 +152,8 @@ li a .home-effect {
 main .main-container {
     width: calc(100% - 220px);
     height: 100%;
-    background-color: green;
     overflow: auto;
+    background-color: rgb(20, 25, 34);
 }
 
 .main-container .upgrade {
@@ -190,7 +185,6 @@ main .main-container {
 .main-container .type-movie {
     width: 100%;
     height: 65px;
-    background-color: chocolate;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,8 +204,6 @@ main .main-container {
 
 .main-container .row {
     width: 100%;
-    background-color: #ff00cb;
-    border-bottom: 3px solid black;
     padding: 10px;
 }
 
@@ -234,7 +226,6 @@ main .main-container {
 
 .row-cards .movie-card {
     flex-basis: calc(92.5% / 6);
-    background-color: darkolivegreen;
     text-align: center;
 }
 
@@ -259,10 +250,10 @@ main .main-container {
 footer {
     width: 100%;
     height: 60px;
-    background-color: blue;
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
+    background-color: rgb(40, 40, 40);
 }
 
 footer .cont-footer {
@@ -272,14 +263,13 @@ footer .cont-footer {
 }
 
 footer .footer-left {
-    background-color: #4ee249;
-    width: 215px;
+    width: 25%;
 }
 
 .footer-left .footer-img {
     width: 40px;
     height: 40px;
-/*     flex-shrink: 0; */
+    flex-shrink: 0;
 }
 
 .footer-left .footer-img img {
@@ -288,8 +278,12 @@ footer .footer-left {
 }
 
 .footer-left .name-recommendation {
+    width: 45%;
+    height: 100%;
     padding-left: 10px;
-/*     flex-shrink: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-left .name-recommendation h5 {
@@ -302,10 +296,10 @@ footer .footer-left {
 }
 
 .footer-left .add {
-    width: 50%;
     height: 100%;
     line-height: 54px;
     text-align: right;
+    display: flex;
 }
 
 .add a .fa-heart,
@@ -316,6 +310,7 @@ footer .footer-left {
 }
 
 .footer-center {
+    width: 50%;
     flex-direction: column;
 }
 
@@ -344,8 +339,10 @@ footer .footer-left {
 }
 
 .footer-center .time {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 50%;
 }
 
@@ -357,16 +354,22 @@ footer .footer-left {
 }
 
 footer .footer-right {
+    width: 25%;
+    justify-content: flex-end;
 }
 
 footer .footer-right>div {
     color: white;
-    font-size: 15px;
-    padding: 0 10px;
+    font-size: 13px;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-center .time #lightgray {
-    width: 70px;
+    width: 15%;
     height: 4px;
     background-color: lightgray;
     border-bottom-left-radius: 10px;
@@ -374,7 +377,7 @@ footer .footer-right>div {
 }
 
 .footer-center .time #gray {
-    width: 280px;
+    width: 35%;
     height: 4px;
     background-color: gray;
     border-bottom-right-radius: 10px;
@@ -382,7 +385,7 @@ footer .footer-right>div {
 }
 
 .cont-footer #volume-lightgray {
-    width: 35px;
+    width: 20px;
     height: 4px;
     background-color: lightgray;
     border-bottom-left-radius: 10px;
@@ -390,7 +393,7 @@ footer .footer-right>div {
 }
 
 .cont-footer #volume-gray {
-    width: 110px;
+    width: 25%;
     height: 4px;
     background-color: gray;
     border-bottom-right-radius: 10px;
@@ -406,20 +409,27 @@ footer .footer-right>div {
     
     .row-cards .movie-card {
         flex-basis: calc(92.5% / 4);
+        margin-bottom: 5px;
     }
-    
 }
 
 /* Breakpoint Small */
 @media screen and (max-width: 600px) {
     .row-cards .movie-card {
         flex-basis: calc(92.5% / 2);
+        margin-bottom: 5px;
     }
 
+    .footer-left .add {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: normal;
+    }
 
-@media screen and (min-width: 577px) {
-    .row-cards .movie-card {
-        flex-basis: calc(92.5% / 2);
+    .footer-left .footer-img {
+        width: 37px;
+        height: 37px;
     }
 }
 
@@ -445,7 +455,10 @@ footer .footer-right>div {
     .logo img:last-child {
         display: inline;
         width: 35px;
+    }
 
+    .menu .menu-top .home {
+        margin-top: 0;
     }
 
     li a .home-effect {
@@ -480,7 +493,6 @@ footer .footer-right>div {
     /* main */
     main .main-container {
         width: calc(100% - 55px);
-        background-color: green;
     }
 
     .main-container .upgrade {
@@ -498,11 +510,13 @@ footer .footer-right>div {
 
     .row-cards .movie-card {
         flex-basis: calc(92.5% / 2);
+        margin-bottom: 5px;
     }
 
 
     /* footer */
-    /* .cont-footer .name-recommendation {
-        flex-shrink: 1;
-    }*/
+    .footer-left .footer-img {
+        width: 35px;
+        height: 35px;
+    }
 }
