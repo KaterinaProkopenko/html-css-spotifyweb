@@ -21,6 +21,10 @@ ul li {
     list-style-type: none;
 }
 
+.color-white {
+    color: white;
+}
+
 main .menu {
     width: 220px;
     height: 100%;
@@ -88,7 +92,6 @@ li a .home-effect {
 }
 
 .playlist h4 {
-    color: white;
     padding: 10px 0;
 }
 
@@ -153,7 +156,6 @@ li a .home-effect {
 }
 
 .menu-bottom .user h4 {
-    color: white;
     float: left;
     padding-left: 10px;
     display: inline;
@@ -219,7 +221,6 @@ main .main-container {
 
 .upgrade button a {
     text-decoration: none;
-    color: white;
     font-size: 10px;
 }
 
@@ -263,10 +264,6 @@ main .main-container {
     padding: 10px;
 }
 
-.row h2 {
-    color: white;
-}
-
 .row p {
     padding-top: 5px;
     font-size: 13px;
@@ -284,11 +281,11 @@ main .main-container {
     flex-basis: calc(92.5% / 6);
     text-align: center;
     height: 100%;
+    position: relative;
 }
 
 .row-cards .movie-card a {
     text-decoration: none;
-    position: relative;
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -299,34 +296,12 @@ main .main-container {
 }
 
 .row-cards .movie-card a h5 {
-    color: white;
     padding: 4px 0;
 }
 
 .row-cards .movie-card a p {
     color: gray;
     font-size: 11px;
-}
-
-.movie-card a .hover-movie {
-    width: 100%;
-    height: 135.167px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 45px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-a .hover-movie i {
-    position: relative;
-    top: 30%;
-} 
-
-.row-cards .movie-card a:hover .hover-movie{
-    display: inline;
 }
 
 footer {
@@ -366,10 +341,6 @@ footer .footer-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.footer-left .name-recommendation h5 {
-    color: white;
 }
 
 .footer-left .name-recommendation p {
@@ -442,7 +413,6 @@ footer .footer-left {
 .footer-center .time .real-time,
 .footer-center .time .time-total {
     font-size: 10px;
-    color: white;
     padding: 0 20px;
 }
 
@@ -481,7 +451,6 @@ footer .footer-right>div {
     width: 15px;
     height: 15px;
     font-size: 18px;
-    color: white;
     position: absolute;
     top: 12%;
     left: 39%;
@@ -516,7 +485,6 @@ footer .footer-right {
     width: 15px;
     height: 15px;
     font-size: 18px;
-    color: white;
     position: absolute;
     top: 31%;
     left: 73%;
@@ -545,6 +513,10 @@ footer .footer-right {
     .row-cards .movie-card {
         flex-basis: calc(92.5% / 4);
         margin-bottom: 5px;
+    }
+
+    ul li a:hover {
+        color: white;
     }
 }
 
