@@ -25,7 +25,7 @@
                 <!-- Navigazione principale -->
                 <nav class="home">
                 <ul>
-                    <li>
+                    <li class="home-active">
                         <a href="#">
                             <img src="img/home.svg" alt="Home">
                             <div class="home-effect">Home</div>
@@ -53,7 +53,7 @@
                     <h4>PLAYLIST</h4>
                     <div class="create-playlist">
                         <a href="#">
-                            <span><i class="fas fa-plus-square"></i></span> 
+                            <span>+</span> 
                             Crea Playlist
                         </a>
                     </div>
@@ -103,6 +103,7 @@
             <nav class="type-movie">
                 <div class="type">
                     <a href="#">IN EVIDENZA</a>
+                    <span class="type-active"></span>
                 </div>
                 <div class="type">
                     <a href="#">PODCAST</a>
@@ -131,6 +132,9 @@
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                             <h5>Heavy Metal</h5>
                             <p>Subtitle</p>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>
                     </div>
 
@@ -139,6 +143,9 @@
                             <img src="img/stranger.jpeg" alt="Stranger Things">
                             <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
                             <p>Kyle Dixon & Michael Stein</p>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>
                     </div>
 
@@ -147,6 +154,9 @@
                             <img src="img/aquietplace.jpeg" alt="A quiet place">
                             <h5>A quiet place</h5>
                             <p>Subtitle</p>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>
                     </div>
 
@@ -155,6 +165,9 @@
                             <img src="img/split.jpeg" alt="Split">
                             <h5>Split</h5>
                             <p>Subtitle</p>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>    
                     </div>
 
@@ -163,6 +176,9 @@
                             <img src="img/cure.jpeg" alt="A cure for wellness">
                             <h5>A cure for wellness</h5>
                             <p>Subtitle</p>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>
                     </div>
 
@@ -171,6 +187,9 @@
                             <img src="img/sinister.jpeg" alt="Sinister">
                             <h5>Sinister</h5>
                             <p>Subtitle</p>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>   
                     </div>
                 </div>
@@ -185,6 +204,9 @@
                         <a href="#">
                             <img src="img/radar.jpeg" alt="Release Radar">
                             <h5>Release Radar</h5>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a> 
                     </div>
 
@@ -192,6 +214,9 @@
                         <a href="#">
                             <img src="img/mixdaily.jpeg" alt="Daily Mix 1">
                             <h5>Daily Mix 1</h5>
+                            <div class="hover-movie">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -251,7 +276,9 @@
 
             <div class="time">
                 <div class="real-time">0:25</div>
-                <span id="lightgray"></span>
+                <span id="lightgray">
+                    <span class="point">&bull;</span>
+                </span>
                 <span id="gray"></span>
                 <div class="time-total">4:35</div>
             </div>
@@ -262,7 +289,9 @@
             <div><i class="fas fa-list"></i></div>
             <div><i class="fas fa-tv"></i></div>
             <div><i class="fas fa-volume-up"></i></div>
-            <span id="volume-lightgray"></span>
+            <span id="volume-lightgray">
+                <span class="point">&bull;</span>
+            </span>
             <span id="volume-gray"></span>
             
         </div>

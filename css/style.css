@@ -25,7 +25,6 @@ main .menu {
     width: 220px;
     height: 100%;
     background-color: black;
-    padding: 0 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,8 +54,13 @@ main .menu {
     margin-top: 15px;
 }
 
+.home ul .home-active{
+    border-left: 2px solid rgb(7, 214, 7);
+}
+
 .home ul li {
     line-height: 35px;
+    padding: 0 7px;
 }
 
 .home ul li a img {
@@ -70,13 +74,17 @@ ul li a {
     font-size: 13px;
 }
 
+ul li a:hover {
+    color: white;
+}
+
 li a .home-effect {
     display: inline;
 }
 
 .menu .menu-top .playlist {
     width: 100%;
-    padding-top: 15px;
+    padding: 15px 7px 0 7px;
 }
 
 .playlist h4 {
@@ -84,23 +92,48 @@ li a .home-effect {
     padding: 10px 0;
 }
 
+.playlist .create-playlist {
+    width: 100%;
+    height: 43px;
+}
+
 .create-playlist a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
     text-decoration: none;
     color: gray;
     font-size: 18px;
 }
 
+.create-playlist a:hover {
+    color: white;
+}
+
+.create-playlist a:hover span {
+    background-color: white;
+}
+
 .create-playlist a span {
+    background-color: gray;
     font-size: 35px;
     vertical-align: middle;
+    color: black;
+    padding: 0 8px;
+    margin-right: 6px;
 }
 
 .playlist .list {
-    width: 100%; 
+    width: 100%;
+    padding-top: 10px;
 }
 
 .playlist .list ul li {
     line-height: 27px;
+}
+
+.menu .menu-bottom {
+    padding: 0 7px;
 }
 
 .menu-bottom .user {
@@ -149,6 +182,10 @@ li a .home-effect {
     display: inline;
 }
 
+.menu-bottom .install a:hover {
+    color:white;
+}
+
 main .main-container {
     width: calc(100% - 220px);
     height: 100%;
@@ -176,6 +213,10 @@ main .main-container {
     background-color: black;
 }
 
+.upgrade button:hover {
+    padding: 7px 34px 9px 34px;
+}
+
 .upgrade button a {
     text-decoration: none;
     color: white;
@@ -194,12 +235,27 @@ main .main-container {
 
 .type-movie .type {
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .type-movie .type a {
     font-size: 11px;
     text-decoration: none;
     color: gray;
+}
+
+.type-movie .type a:hover {
+    color: white;
+}
+
+.type-movie .type .type-active {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(7, 214, 7);
 }
 
 .main-container .row {
@@ -227,10 +283,15 @@ main .main-container {
 .row-cards .movie-card {
     flex-basis: calc(92.5% / 6);
     text-align: center;
+    height: 100%;
 }
 
 .row-cards .movie-card a {
     text-decoration: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .row-cards .movie-card a img {
@@ -245,6 +306,27 @@ main .main-container {
 .row-cards .movie-card a p {
     color: gray;
     font-size: 11px;
+}
+
+.movie-card a .hover-movie {
+    width: 100%;
+    height: 135.167px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+a .hover-movie i {
+    position: relative;
+    top: 30%;
+} 
+
+.row-cards .movie-card a:hover .hover-movie{
+    display: inline;
 }
 
 footer {
@@ -309,6 +391,12 @@ footer .footer-left {
     font-size: 15px;
 }
 
+.add a .fa-heart:hover,
+.add a .fa-folder:hover {
+    color: white;
+}
+
+
 .footer-center {
     width: 50%;
     flex-direction: column;
@@ -324,6 +412,10 @@ footer .footer-left {
 .footer-center .play a {
     color: gray;
     padding: 0 10px;
+}
+
+.footer-center .play a:hover {
+    color: white;
 }
 
 .play a .size {
@@ -344,6 +436,7 @@ footer .footer-left {
     align-items: center;
     justify-content: center;
     height: 50%;
+    position: relative;
 }
 
 .footer-center .time .real-time,
@@ -376,6 +469,25 @@ footer .footer-right>div {
     border-top-left-radius: 10px;
 }
 
+.footer-center .time #lightgray:hover {
+    background-color: rgb(7, 214, 7);
+}
+
+.footer-center .time #lightgray:hover .point {
+    display: inline;
+}
+
+.time #lightgray .point {
+    width: 15px;
+    height: 15px;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 39%;
+    display: none;
+}
+
 .footer-center .time #gray {
     width: 35%;
     height: 4px;
@@ -384,7 +496,11 @@ footer .footer-right>div {
     border-top-right-radius: 10px;
 }
 
-.cont-footer #volume-lightgray {
+footer .footer-right {
+    position: relative;
+}
+
+.footer-right #volume-lightgray {
     width: 20px;
     height: 4px;
     background-color: lightgray;
@@ -392,7 +508,26 @@ footer .footer-right>div {
     border-top-left-radius: 10px;
 }
 
-.cont-footer #volume-gray {
+.footer-right #volume-lightgray:hover {
+    background-color: rgb(7, 214, 7);
+}
+
+.footer-right #volume-lightgray .point {
+    width: 15px;
+    height: 15px;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 31%;
+    left: 73%;
+    display: none;
+}
+
+.footer-right #volume-lightgray:hover .point {
+    display: inline;
+}
+
+.footer-right #volume-gray {
     width: 25%;
     height: 4px;
     background-color: gray;
@@ -400,7 +535,7 @@ footer .footer-right>div {
     border-top-right-radius: 10px;
 }
 
-/* Breakpoint Medium */
+/* Breakpoint medium*/
 @media screen and (max-width: 991px) {
     .row .row-cards {
         display: flex;
@@ -413,8 +548,8 @@ footer .footer-right>div {
     }
 }
 
-/* Breakpoint Small */
-@media screen and (max-width: 600px) {
+/* Breakpoint Small*/
+@media screen and (min-width: 577px) and (max-width: 797px){
     .row-cards .movie-card {
         flex-basis: calc(92.5% / 2);
         margin-bottom: 5px;
@@ -455,6 +590,10 @@ footer .footer-right>div {
     .logo img:last-child {
         display: inline;
         width: 35px;
+    }
+
+    .home ul .home-active{
+        border-left: none;
     }
 
     .menu .menu-top .home {
@@ -500,7 +639,7 @@ footer .footer-right>div {
     }
 
     .main-container .type-movie {
-        line-height: 35px;
+        line-height: 25px;
     }
 
     .row .row-cards {
